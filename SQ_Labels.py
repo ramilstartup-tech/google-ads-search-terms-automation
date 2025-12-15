@@ -2,9 +2,9 @@ import pandas as pd
 import time
 import datetime
 # Define file paths
-data_test_path = r'C:\Users\User\OneDrive\Desktop\Impress\Google Ads Impress\Python Analysis\SQ_Labels\PQ Data All\Initial Data.xlsx'
-sq_all_labels_path = r'C:\Users\User\OneDrive\Desktop\Impress\Google Ads Impress\Python Analysis\SQ_Labels\PQ Data Labels\SQ All Labels.xlsx'
-output_path_template = r'C:\Users\User\OneDrive\Desktop\Impress\Google Ads Impress\Python Analysis\SQ_Labels\Results\Results_with_labels_aggregated_{datetime}.xlsx'
+data_test_path = "path/to/search_terms.xlsx"
+sq_all_labels_path = "path/to/labels_library.xlsx"
+output_path_template = "path/to/output/results_with_labels_{datetime}.xlsx"
 
 # Load the provided files
 data_test = pd.read_excel(data_test_path)
@@ -183,4 +183,5 @@ with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
 
 
 print(f"Script completed successfully! Results workbook saved to {output_path}")
+
 print("Sheets generated: Results, Not Found")
