@@ -31,3 +31,5 @@ When you need to process thousands of search terms quickly (e.g., 5k–10k+) and
 1) Install dependencies:
 ```bash
 pip install -r requirements.txt
+
+Before running the script, update file paths in the CONFIG section of `SQ_Labels.py`.
